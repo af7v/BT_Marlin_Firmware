@@ -921,7 +921,7 @@
  *
  * Specify a Probe position as { X, Y, Z }
  */
-#define NOZZLE_TO_PROBE_OFFSET { -40, -10, -1.5 }
+#define NOZZLE_TO_PROBE_OFFSET { 30, 10, -1.5 }
 
 // Certain types of probes need to stay away from edges
 #define MIN_PROBE_EDGE 10
@@ -1318,8 +1318,8 @@
 #define Z_SAFE_HOMING
 
 #if ENABLED(Z_SAFE_HOMING)
-  #define Z_SAFE_HOMING_X_POINT ((X_BED_SIZE) / 5)    // X point for Z homing when homing all axes (G28).
-  #define Z_SAFE_HOMING_Y_POINT ((Y_BED_SIZE) / 5)    // Y point for Z homing when homing all axes (G28).
+  #define Z_SAFE_HOMING_X_POINT ((X_BED_SIZE) / 2)    // X point for Z homing when homing all axes (G28).
+  #define Z_SAFE_HOMING_Y_POINT ((Y_BED_SIZE) / 2)    // Y point for Z homing when homing all axes (G28).
 #endif
 
 // Homing speeds (mm/m)
